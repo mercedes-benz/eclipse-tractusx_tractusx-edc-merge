@@ -27,6 +27,7 @@
 # Declare variables to be passed into your templates.
 
 install:
+  certs: false
   daps: true
   postgresql: true
   vault: true
