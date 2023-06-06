@@ -496,7 +496,6 @@ dataplane:
 
 postgresql:
   jdbcUrl: ""
-  fullnameOverride: "postgresql"
   primary:
     persistence:
   enabled: false
@@ -523,7 +522,6 @@ vault:
     dapsPublicKey: daps-public-key
 
 daps:
-  fullnameOverride: "daps"
   url: ""
   clientId: ""
   paths:
