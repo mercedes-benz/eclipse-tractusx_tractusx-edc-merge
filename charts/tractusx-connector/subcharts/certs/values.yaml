@@ -18,7 +18,7 @@
 # #############################################################################
 ---
 daps:
-  address: http://{{ .Release.Name }}-daps:4567
+  url: http://{{ .Release.Name }}-daps:4567
 
   auth:
     clientId: ""
@@ -28,7 +28,7 @@ daps:
     clientId: ""
 
 vault:
-  address: http://{{ .Release.Name }}-vault:8200
+  url: http://{{ .Release.Name }}-vault:8200
 
   daps:
     privateKey: "daps-private-key"
