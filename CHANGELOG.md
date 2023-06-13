@@ -7,8 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.4.2] - 2023-06-13
-
+## [0.4.4] - 2023-06-13
 ## [0.4.1] - 2023-05-31
 
 ### Added
@@ -296,7 +295,7 @@ corresponding [documentation](/docs/migration/Version_0.0.x_0.1.x.md).
 -   Helm: Confidential EDC settings can be set using k8s secrets
 -   HashiCorp Vault API path configurable
 
-## [0.0.4] - 2022-06-27
+## [0.0.4] - 2022-06-27https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/pull/2/conflict?name=CHANGELOG.md&ancestor_oid=fadbf8cb87c6a61a7eee0ce022f6b2243ab3d847&base_oid=ec171ada7e85b0869201d91fcba9fa386d685982&head_oid=99365d3d150c8cf434bfc21ea36ffe4726b2aa6c
 
 ### Added
 
@@ -323,9 +322,9 @@ corresponding [documentation](/docs/migration/Version_0.0.x_0.1.x.md).
 
 ## [0.0.1] - 2022-05-13
 
-[Unreleased]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.2...HEAD
+[Unreleased]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.4...HEAD
 
-[0.4.2]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.1...0.4.2
+[0.4.4]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.1...0.4.4
 
 [0.4.1]: https://github.com/eclipse-tractusx/tractusx-edc/compare/0.3.3...0.4.1
 
