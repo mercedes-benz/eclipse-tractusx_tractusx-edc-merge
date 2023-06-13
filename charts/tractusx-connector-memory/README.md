@@ -1,6 +1,6 @@
 # tractusx-connector-memory
 
-![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.1](https://img.shields.io/badge/AppVersion-0.4.1-informational?style=flat-square)
+![Version: 0.4.2](https://img.shields.io/badge/Version-0.4.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.2](https://img.shields.io/badge/AppVersion-0.4.2-informational?style=flat-square)
 
 A Helm chart for Tractus-X Eclipse Data Space Connector based on memory. Please only use this for development or testing purposes, never in production workloads!
 
@@ -32,7 +32,7 @@ Combined, run this shell command to start the in-memory Tractus-X EDC runtime:
 
 ```shell
 helm repo add tractusx-edc https://eclipse-tractusx.github.io/charts/dev
-helm install my-release tractusx-edc/tractusx-connector-memory --version 0.4.1 \
+helm install my-release tractusx-edc/tractusx-connector-memory --version 0.4.2 \
      -f <path-to>/example.yaml \
      --set vault.secrets="daps-cert:$DAPS_CERT;daps-key:$DAPS_KEY" \
 ```
@@ -60,10 +60,9 @@ Note that `DAPS_CERT` contains the x509 certificate, `DAPS_KEY` contains the pri
 | daps.connectors[0].certificate | string | `""` |  |
 | daps.connectors[0].id | string | `"E7:07:2D:74:56:66:31:F0:7B:10:EA:B6:03:06:4C:23:7F:ED:A6:65:keyid:E7:07:2D:74:56:66:31:F0:7B:10:EA:B6:03:06:4C:23:7F:ED:A6:65"` |  |
 | daps.connectors[0].name | string | `"sokrates"` |  |
-| daps.fullnameOverride | string | `"daps"` |  |
 | daps.paths.jwks | string | `"/jwks.json"` |  |
 | daps.paths.token | string | `"/token"` |  |
-| daps.url | string | `""` |  |
+| daps.url | string | `"http://{{ .Release.Name }}-daps:4567"` |  |
 | fullnameOverride | string | `""` |  |
 | idsdaps.connectors[0].certificate | string | `""` |  |
 | imagePullSecrets | list | `[]` | Existing image pull secret to use to [obtain the container image from private registries](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry) |
