@@ -1,0 +1,99 @@
+apiVersion: v1
+entries:
+  daps:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-06-14T11:02:36.826825719Z"
+    description: A Helm chart for Kubernetes
+    digest: 89ffb40f77d90b4329cadaef0fb1fefa7dbc8424cc6e0c92b419f5937aae7235
+    name: daps
+    type: application
+    urls:
+    - https://mercedes-benz.github.io/eclipse-tractusx_tractusx-edc-merge/helm-charts/daps-0.0.1.tgz
+    version: 0.0.1
+  tractusx-connector:
+  - apiVersion: v2
+    appVersion: 0.4.1-PR473-474-475
+    created: "2023-06-14T11:02:36.83973189Z"
+    dependencies:
+    - alias: daps
+      condition: install.daps
+      name: daps
+      repository: file://./subcharts/omejdn
+      version: 0.0.1
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.20.0
+    - alias: postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    description: 'A Helm chart for Tractus-X Eclipse Data Space Connector. The connector
+      deployment consists of two runtime consists of a Control Plane and a Data Plane.
+      Note that _no_ external dependencies such as a PostgreSQL database and HashiCorp
+      Vault are included.  This chart is intended for use with an _existing_ PostgreSQL
+      database and an _existing_ HashiCorp Vault. '
+    digest: 56821a18eb7e9973b6917d1ef3d27e1614afa580069ab14b9a23faa59e9edafe
+    home: https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector
+    name: tractusx-connector
+    sources:
+    - https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector
+    type: application
+    urls:
+    - https://mercedes-benz.github.io/eclipse-tractusx_tractusx-edc-merge/helm-charts/tractusx-connector-0.4.1-PR473-474-475.tgz
+    version: 0.4.1-PR473-474-475
+  tractusx-connector-azure-vault:
+  - apiVersion: v2
+    appVersion: 0.4.1-PR473-474-475
+    created: "2023-06-14T11:02:36.848072901Z"
+    dependencies:
+    - alias: daps
+      condition: install.daps
+      name: daps
+      repository: file://./subcharts/omejdn
+      version: 0.0.1
+    - alias: postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    description: 'A Helm chart for Tractus-X Eclipse Data Space Connector. The connector
+      deployment consists of two runtime consists of a Control Plane and a Data Plane.
+      Note that _no_ external dependencies such as a PostgreSQL database and Azure
+      KeyVault are included.  This chart is intended for use with an _existing_ PostgreSQL
+      database and an _existing_ Azure KeyVault. '
+    digest: b8ec6ae1d88e3fe294f69ec2c6610c429b7299961fc2e8ad1464e7f820856e0f
+    home: https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector
+    name: tractusx-connector-azure-vault
+    sources:
+    - https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector
+    type: application
+    urls:
+    - https://mercedes-benz.github.io/eclipse-tractusx_tractusx-edc-merge/helm-charts/tractusx-connector-azure-vault-0.4.1-PR473-474-475.tgz
+    version: 0.4.1-PR473-474-475
+  tractusx-connector-memory:
+  - apiVersion: v2
+    appVersion: 0.4.1-PR473-474-475
+    created: "2023-06-14T11:02:36.850550134Z"
+    dependencies:
+    - alias: daps
+      condition: install.daps
+      name: daps
+      repository: file://./subcharts/omejdn
+      version: 0.0.1
+    description: A Helm chart for Tractus-X Eclipse Data Space Connector based on
+      memory. Please only use this for development or testing purposes, never in production
+      workloads!
+    digest: 1b19c7ef8281d6243fe73a2e0593a471065bf9396b49f9f756941d337045e0b8
+    home: https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector-memory
+    name: tractusx-connector-memory
+    sources:
+    - https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector-memory
+    type: application
+    urls:
+    - https://mercedes-benz.github.io/eclipse-tractusx_tractusx-edc-merge/helm-charts/tractusx-connector-memory-0.4.1-PR473-474-475.tgz
+    version: 0.4.1-PR473-474-475
+generated: "2023-06-14T11:02:36.825322899Z"
