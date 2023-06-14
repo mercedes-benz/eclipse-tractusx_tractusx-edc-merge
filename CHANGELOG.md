@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1-PR473-474-475] - 2023-06-14
+
 ## [0.4.6] - 2023-06-14
 
 ## [0.4.5] - 2023-06-14
@@ -327,7 +329,9 @@ corresponding [documentation](/docs/migration/Version_0.0.x_0.1.x.md).
 
 ## [0.0.1] - 2022-05-13
 
-[Unreleased]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.6...HEAD
+[Unreleased]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.1-PR473-474-475...HEAD
+
+[0.4.1-PR473-474-475]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.6...0.4.1-PR473-474-475
 
 [0.4.6]: https://github.com/mercedes-benz/eclipse-tractusx_tractusx-edc-merge/compare/0.4.5...0.4.6
 
