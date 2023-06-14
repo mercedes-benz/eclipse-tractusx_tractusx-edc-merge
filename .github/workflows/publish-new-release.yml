@@ -166,7 +166,7 @@ jobs:
           helm repo index . --merge index.yaml --url https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/
 
           # Commit and push to gh-pages
-          git add index.yaml helm-charts
+          git add -f index.yaml helm-charts
           git commit -s -m "Release ${{ env.RELEASE_VERSION }}"
 
           git push origin gh-pages
